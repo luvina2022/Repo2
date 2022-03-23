@@ -1,0 +1,11 @@
+rubilana.net
+provider "aws" {
+  region     = "ap-northeast-1"
+  access_key = "AKIAQIPNDBF5C45DPNMN"
+  secret_key = "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"
+}
+
+resource "aws_iam_user" "IAMUser" {
+    path = "/"
+    name = "m-osada@cresco-jinzai"
+}
